@@ -1,1 +1,103 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admission Application</title>
+</head>
+
+<body>
+
+    <h1>College Admission Application Form</h1>
+
+    <p>
+        Welcome to ABC College. Please fill out the admission application
+        form carefully and provide accurate information.
+    </p>
+
+    <img src="college.jpg" alt="College Campus" width="300">
+
+    <h2>Admission Application</h2>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="full_name"
+                   placeholder="Enter your full name"
+                   minlength="3" maxlength="50" required>
+            <br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="date_of_birth"
+                   min="1990-01-01" max="2010-12-31" required>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"
+                   placeholder="example@email.com"
+                   autocomplete="email" required>
+            <br><br>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile"
+                   placeholder="10-digit mobile number"
+                   pattern="[0-9]{10}"
+                   maxlength="10" required>
+            <br><br>
+
+            <label for="pin">Application PIN:</label>
+            <input type="password" id="pin" name="application_pin"
+                   minlength="6" maxlength="12" required>
+            <br><br>
+
+            <p>Gender:</p>
+
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+
+            <br><br>
+
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="">-- Select Category --</option>
+                <option value="general">General</option>
+                <option value="obc">OBC</option>
+                <option value="sc">SC</option>
+                <option value="st">ST</option>
+                <option value="ews">EWS</option>
+            </select>
+
+            <br><br>
+
+            <label for="address">Permanent Address:</label><br>
+            <textarea id="address" name="permanent_address"
+                      rows="5" cols="50"
+                      minlength="10" maxlength="200"
+                      placeholder="Enter your complete permanent address"
+                      required></textarea>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Course Information</legend>
+
+            <label for="course">Select Course/Program:</label>
+            <select id="course" name="course" required>
+                <option value="">-- Select Course --</option>
+                <option value="bca">BCA</option>
+                <option value="btech">B.Tech</option>
+                <option value="bba">BBA</option>
+                <option value="bsc">B.Sc</option>
+                <option value="ba">B.A
